@@ -34,6 +34,7 @@ m_k =
      \end{cases}
 $$
 
+
 #### Numeric Approximation
 Done using Montercarlo simulation, shown in the *jupyter notebook*. Data of the simulations is also loaded.
 

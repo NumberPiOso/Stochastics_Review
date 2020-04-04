@@ -4,16 +4,16 @@ In this repository I keep some simulations, using Montecarlo techniques and post
 
 ## Gamblers ruin
 
-Consider a game with two players where player one has a probability $p$ chance of winning at every round. After each round loser transfers one penny to the winner. The game ends when one player has all the pennies.  
+Consider a game with two players where player one has a probability *p* chance of winning at every round. After each round loser transfers one penny to the winner. The game ends when one player has all the pennies.  
 
 If there are no other limitations on the rounds, the probability that the game will eventually end this way is 1. (This is due to 0 and N are absorbing states and demonstrations of this probability can be found in most text books that have _random walks_ or _Markov Chain_).
 
-Player one starts with $k$ points, and the probability of him winning each round is $p$. Player 2 starts with $N-k$ points, so the number of points in the game will always be constant $N$.
+Player one starts with *k* points, and the probability of him winning each round is *p*. Player 2 starts with *N-k* points, so the number of points in the game will always be constant *N*.
 
-Let $u_k$ represent the expectation that the game is absorbed by state 0. Formally, let $\tau = min\{ n \geq 0 : X_n = 0 or X_n = N \}$ then:
+Let $u_k$ represent the expectation that the game is absorbed by state 0. Formally, let ![\tau = min\{ n \geq 0 : X_n = 0 or X_n = N \}](https://render.githubusercontent.com/render/math?math=%5Ctau%20%3D%20min%5C%7B%20n%20%5Cgeq%200%20%3A%20X_n%20%3D%200%20or%20X_n%20%3D%20N%20%5C%7D) then:
 
 <!-- $u_k = P(X_{\tau} = 0 \; |\;  X_0 = k \}$ -->
-![u_k = P(X_{\tau} = 0 \; |\;  X_0 = k \}](https://render.githubusercontent.com/render/math?math=u_k%20%3D%20P(X_%7B%5Ctau%7D%20%3D%200%20%5C%3B%20%7C%5C%3B%20%20X_0%20%3D%20k%20%5C%7D)
+![u_k = P(X_{\tau} = 0 \; |\;  X_0 = k \}](https://render.githubusercontent.com/render/math?math=u_k%20%3D%20P\(X_%7B%5Ctau%7D%20%3D%200%20%5C%3B%20%7C%5C%3B%20%20X_0%20%3D%20k%20%5C%7D)
 
 Then  
 
